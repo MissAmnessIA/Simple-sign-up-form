@@ -1,0 +1,150 @@
+@font-face {
+    font-family: my-logo;
+    src: url(sources/Baumans/Baumans-Regular.ttf);
+}
+
+@font-face {
+    font-family: regular-roboto;
+    src: url(sources/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'regular-roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+#background-img {
+    width: 50vh;
+}
+
+#logo-side {
+    display: flex;
+    justify-content: center;
+    height: 110vh;
+}
+
+#logo-div {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translate(0, 20vh);
+    width: 50vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-text {
+    font-family: "my-logo";
+}
+
+#form-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.grey-background {
+    background-color: rgb(249, 250, 251);
+}
+#presentation, #submit-section {
+    padding-left: 5vh;
+    height: 100%;
+}
+#form-section {
+    padding-left: 5vh;
+    padding-bottom: 5vh;
+    box-shadow: 0px 2px 5px rgb(192, 192, 192);
+    z-index: 1;
+}
+#submit-section {
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2vh;
+}
+
+button {
+    font-size: medium;
+    padding: 10px 50px;
+    border: 0;
+    border-radius: 7px;
+    background-color: rgb(231, 110, 160);
+    color: white;
+    font-weight: 550;
+    box-shadow: 1px 2px 3px rgb(151, 151, 151);
+    margin-bottom: 10px;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding-bottom: 4vh;
+    font-weight: 550;
+    font-size: 1.3em;
+}
+
+#form-section h1:first-child{
+    font-size: 1.3em;
+    color: rgb(56, 56, 56);
+    font-weight: 550;
+    margin-bottom: 3vh;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+fieldset {
+    display: flex;
+    gap: 14vh;
+    border: none;
+    padding: 0;
+}
+
+label {
+    display: block;
+    font-size: 0.7em;
+    color: rgba(112, 112, 112, 0.884);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 2px;
+}
+
+input {
+    width: 200px;
+    border: 1px solid rgb(237, 238, 241);
+    border-radius: 4px;
+    height: 20px;
+    padding-left: 10px;
+}
+
+input:focus {
+    border-color: rgb(86, 112, 208);
+    outline: none;
+    box-shadow: 1px 1px 3px rgba(166, 166, 166, 0.688);
+}
+
+input:invalid {
+    border-color: rgb(187, 87, 84);
+}
+
+a {
+    color: rgb(231, 110, 160);
+}
+a:hover {
+    text-decoration: none;
+}
